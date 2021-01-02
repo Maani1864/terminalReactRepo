@@ -92,26 +92,21 @@ const LandingPage = () => {
 				<Grid contained style={{ backgroundColor: "whitesmoke" }}>
 					<h1
 						style={{ textAlign: "center", color: "black", marginTop: "30px" }}
-					>
-						<strong>sellers</strong>
-					</h1>
+					></h1>
 					<hr />
 					<Navbar bg="light" variant="dark">
 						<Nav className="mx-auto">
-							<Nav.Link href="/products" style={{ color: "black" }}>
+							<Nav.Link href="/" style={{ color: "black" }}>
 								T-Shirts
 							</Nav.Link>
-							<Nav.Link href="/products" style={{ color: "black" }}>
+							<Nav.Link href="/" style={{ color: "black" }}>
 								Hoodies
 							</Nav.Link>
 							<Nav.Link href="/products" style={{ color: "black" }}>
 								Products
 							</Nav.Link>
-							<Nav.Link href="/products" style={{ color: "black" }}>
+							<Nav.Link href="/" style={{ color: "black" }}>
 								Albums
-							</Nav.Link>
-							<Nav.Link href="/products" style={{ color: "black" }}>
-								<AiFillShopping size="1rem" />
 							</Nav.Link>
 						</Nav>
 					</Navbar>

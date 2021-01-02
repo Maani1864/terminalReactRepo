@@ -3,7 +3,6 @@ import { Button, Grid } from "@material-ui/core";
 import ProductService from "../../services/Product";
 import { withRouter } from "react-router-dom";
 import userService from "../../services/UserService";
-import ReactStars from "react-rating-stars-component";
 import $ from "jquery";
 import "../../index.css";
 const SingleProduct = (props) => {
@@ -80,7 +79,7 @@ const SingleProduct = (props) => {
 					<>
 						<Button
 							variant="contained"
-							color="secondary"
+							color="dark"
 							onClick={(e) => {
 								console.log("Update");
 								history.push("/products/update/" + product._id);
@@ -91,7 +90,7 @@ const SingleProduct = (props) => {
 						</Button>
 						<Button
 							variant="contained"
-							color="secondary"
+							color="dark"
 							onClick={(e) => {
 								ProductService.deleteProduct(product._id)
 									.then((data) => {
@@ -150,9 +149,6 @@ const SingleProduct = (props) => {
 			<h5>Details :</h5>
 			<p>{product.details}</p>
 			<br />
-			<Button variant="contained" color="secondary">
-				Add to Cart
-			</Button>
 			<hr />
 		</Grid>
 	);

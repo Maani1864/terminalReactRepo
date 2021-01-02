@@ -40,7 +40,6 @@ const Products = (props) => {
 	};
 	return (
 		<div>
-			<h1 style={{ textAlign: "center" }}>ADMIN SIDE</h1>
 			<select
 				value={perPage}
 				onChange={(e) => setPerPage(e.target.value)}
@@ -56,7 +55,7 @@ const Products = (props) => {
 			</select>
 			{userService.isLoggedin() && (
 				<Fab
-					color="primary"
+					color="dark"
 					aria-label="add"
 					className={classes.addBtn}
 					onClick={handlenewproduct}
