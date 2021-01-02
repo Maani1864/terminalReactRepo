@@ -25,9 +25,6 @@ const TopMenu = () => {
 				<Nav.Link href="/" style={{ color: "black" }}>
 					Home
 				</Nav.Link>
-				<Nav.Link href="/products" style={{ color: "black" }}>
-					Typography
-				</Nav.Link>
 				<Nav.Link href="/contact-us" style={{ color: "black" }}>
 					Contact Us
 				</Nav.Link>
